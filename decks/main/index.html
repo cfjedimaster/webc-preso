@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Components the Eleventy Way</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Opossum_2.jpg/730px-Opossum_2.jpg?20070320020721"
+				data-background-opacity="0.2">
+					<h1>Web Components</h1>
+					<h2>the Eleventy Way</h2>
+				</section>
+
+				<section>
+					<h2>read.me</h2>
+					<ul>
+						<li>Raymond Camden</li>
+						<li>Senior Developer Evangelist at Adobe</li>
+						<li>Enterprise Cat Demo Builder</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting @raymondcamden</li>
+					</ul>
+				</section>
+
+				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
+					<h1>Questions</h1>
+					<p>reach me at @raymondcamden</p>
+					<p>slides: <a href="https://github.com/cfjedimaster/async-preso" target="_new">github.com/cfjedimaster/async-preso</a></p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				slideNumber:'c/t'
+
+			});
+		</script>
+	</body>
+</html>

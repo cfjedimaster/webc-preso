@@ -1,0 +1,11 @@
+Image credit, possum: https://commons.wikimedia.org/wiki/File:Opossum_2.jpg
+
+Outline:
+Quick overview - wtf are web components
+WebC - 
+	How they differ (high level)
+	How to install into 11ty
+	how to start using:
+		cat tag, html only
+		cat tag with javascript, non-rolled vs rolled
+		
