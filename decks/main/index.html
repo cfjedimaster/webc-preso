@@ -34,6 +34,135 @@
 					</ul>
 				</section>
 
+				<section>
+				<h2>My Plan (v1)</h2>
+				<ul>
+				<li class="fragment">Teach you everything about web components</li>
+				<li class="fragment">Teach you how WebC is the same, different, etc</li>
+				<li class="fragment">All within 30 minutes</li>
+				<li class="fragment">Play violin at the same time</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>My Plan (v2)</h2>
+				<ul>
+				<li class="fragment"><u>Quickly</u> cover the why and how of web components</li>
+				<li class="fragment">Introduce WebC (how it's similar, how it differs)</li>
+				<li class="fragment">Show multiple cat demos</li>
+				<li class="fragment">Give some commentary</li>
+				<li class="fragment"><s>Forget the whole violin thing</s></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Web Components - Elevator Pitch</h2>
+				<ul>
+				<li class="fragment">Introduced by Alex Russel in 2011</li>
+				<li class="fragment">Some amount of time passed........</li>
+				<li class="fragment">Now mostly supported (even if _that_ browser)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Web Components - Elevator Pitch (cont.)</h2>
+				<ul>
+				<li class="fragment">Custom elements (&lt;cat-picture&gt;)</li>
+				<li class="fragment">Shadow DOM (cool, but not as cool as it sounds)</li>
+				<li class="fragment">HTML Templates (ehhhh)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Web Components - Why?</h2>
+				<ul>
+				<li class="fragment">Reduce complexity</li>
+				<li class="fragment">Reuse common things</li>
+				<li class="fragment">Libraries</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Example (Using)</h2>
+				<pre><code data-trim>
+<!-- stuff -->
+<h2>Regular HTML</h2>
+<place-holder width="400" height="100" text="Hero Image">
+</place-holder>
+<!-- more stuff, like cookie consents -->
+<script src="mystuff.js"></script>
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>Example (Defining)</h2>
+				<pre class="javascript"><code data-trim>
+const ns = 'http://www.w3.org/2000/svg';
+
+class PlaceHolder extends HTMLElement {
+
+	constructor() {
+
+		super();
+
+		const shadow = this.attachShadow({mode:'open'});
+
+		this.width = 250;
+		this.height = 250;
+		this.bgcolor = '#c0c0c0';
+
+		if(this.hasAttribute('width')) this.width = parseInt(this.getAttribute('width'), 10);
+		if(this.hasAttribute('height')) this.height = parseInt(this.getAttribute('height'), 10);
+		if(this.hasAttribute('bgcolor')) this.bgcolor = this.getAttribute('bgcolor');
+
+		const wrapper = document.createElementNS(ns, 'svg');
+		wrapper.setAttribute('width', this.width);
+		wrapper.setAttribute('height', this.height);
+		wrapper.setAttribute('viewBox', `0 0 ${this.width} ${this.height}`);
+
+		const rect = document.createElementNS(ns, 'rect');
+		rect.setAttribute('width', '100%');
+		rect.setAttribute('height', '100%');
+		rect.setAttribute('fill', this.bgcolor);
+		wrapper.appendChild(rect);
+
+		if(this.getAttribute('text')) {
+			const text = document.createElementNS(ns, 'text');
+			text.setAttribute('x', '50%');
+			text.setAttribute('y', '50%');
+			text.setAttribute('dominant-baseline', 'middle');
+			text.setAttribute('text-anchor', 'middle');
+			text.textContent = this.getAttribute('text');
+			wrapper.appendChild(text);
+		}
+
+		shadow.appendChild(wrapper);
+	}
+}
+
+customElements.define('place-holder', PlaceHolder);
+				</code></pre>
+				</section>
+
+
+				<section>
+				<p>
+				<img src="img/phexample.png">
+				</p>
+				<p>
+				<a href="https://codepen.io/cfjedimaster/pen/KKRxvNx" target="_new">Live Demo</a>
+				</p>
+				</section>
+
+				<section>
+				<h2>But wait...</h2>
+				<ul>
+				<li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components" target="_new">MDN Docs on Web Components</a></li>
+				<li class="fragment"><a href="https://webcomponents.today/" target="_new">webcomponents.today (lots of links)</a></li>
+				<li class="fragment">12 years of kinda outdated material - yay!</li>
+				</ul>
+				</section>
+
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
 					<h1>Questions</h1>
 					<p>reach me at @raymondcamden</p>
