@@ -163,6 +163,115 @@ customElements.define('place-holder', PlaceHolder);
 				</ul>
 				</section>
 
+				<section>
+				<h2 style="text-transform: none">WebC</h2>
+				</section>
+
+				<section>
+				<h2>What?</h2>
+				<ul>
+				<li class="fragment">Components for Eleventy</li>
+				<li class="fragment">Lets you ship no or less JavaScript</li>
+				<li class="fragment">Lets you use them without importing</li>
+				<li class="fragment">Let's you replace existing HTML tags</li>
+				<li class="fragment">More flexible in general</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>How?</h2>
+				<ul>
+				<li class="fragment">Ensure you have Eleventy 2.X Beta</li>
+				<li class="fragment">Install the plugin (not part of core!)</li>
+				</ul>
+				</section>
+
+				<section>
+				<pre class="bash"><code>
+npm install @11ty/eleventy-plugin-webc
+				</code></pre>
+				</section>
+
+				<section>
+				<pre class="javascript"><code>
+				const pluginWebc = require("@11ty/eleventy-plugin-webc");
+
+				module.exports = function(eleventyConfig) {
+					eleventyConfig.addPlugin(pluginWebc, {
+						/* options go here, if needed */
+					});
+				};
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>Then?</h2>
+				<ul>
+				<li class="fragment">Write a component (more on that in a sec)</li>
+				<li class="fragment">Four options to use:
+					<ul>
+						<li class="fragment">Use a new <code>.webc</code> template that makes use of them</li>
+					</ul>
+				</li>
+				</ul>
+				</section>
+
+				<section>
+				<pre class="html"><code>
+<!-- something.webc -->
+<h2>Hello World</h2>
+
+<!-- run the cat component -->
+<cat></cat>
+				</code></pre>
+				</section>
+
+
+				<section>
+				<h2>Then?</h2>
+				<ul>
+				<li>Write a component (more on that in a sec)</li>
+				<li>Four options to use:
+					<ul>
+						<li>Use a new <code>.webc</code> template that makes use of them</li>
+						<li class="fragment">Use the Render plugin</li>
+					</ul>
+				</li>
+				</ul>
+				</section>
+
+				<section>
+				<pre class="html"><code>
+<!-- something.liquid -->
+<h2>Hello World</h2>
+
+{% renderTemplate "webc" %}
+<!-- run the cat component -->
+<cat></cat>
+{% endrenderTemplate %}
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>Then?</h2>
+				<ul>
+				<li>Write a component (more on that in a sec)</li>
+				<li>Four options to use:
+					<ul>
+						<li>Use a new <code>.webc</code> template that makes use of them</li>
+						<li>Use the Render plugin</li>
+						<li class="fragment">Pre-process with WebC (change the <code>htmlTemplateEngine</code>)</li>
+						<li class="fragment">Post-process HTML output (not recommended)</li>
+					</ul>
+				</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif">
+				</section>
+
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
 					<h1>Questions</h1>
 					<p>reach me at @raymondcamden</p>
