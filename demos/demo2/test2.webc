@@ -1,0 +1,17 @@
+---
+title: My page 
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<p>Cat, width=200, height=400:</p>
+<cat2 width="200" height="400"></cat2>
+
+</body>
+</html>

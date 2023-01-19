@@ -1,0 +1,4 @@
+
+<img src="https://placekitten.com/400/400" alt="" :width="width" :height="height">
+
+<slot>No caption provided.</slot>

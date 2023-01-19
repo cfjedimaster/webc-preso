@@ -277,17 +277,82 @@ then npm run serve and show the output
 				</section>
 
 				<section>
-				<h2>WebC - Deeper</h2>
+				<h2>WebC - Attributes</h2>
 				<ul>
-				<li class="fragment"></li>
+				<li class="fragment"><code>&lt;cat width="200" height="200"&gt;</code></li>
+				<li class="fragment">In the component, <code>:width="width"</code></li>
+				<li class="fragment">Has access to page variables</li>
 				</ul>
 				</section>
-				
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif">
+				<aside class="notes">
+Show demo2, new cat component, and index.webc. then show test2.webc and cat2.webc
+				</aside>
+				</section>
+
+				<section>
+				<h2>WebC - Attributes (2)</h2>
+				<ul>
+				<li class="fragment"><code>&lt;cat caption="Text here"&gt;</code></li>
+				<li class="fragment">In the component, <code>&lt;p @text="caption"&gt;</code></li>
+				<li class="fragment">In the component, <code>&lt;p @html="caption"&gt;</code></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif">
+				<aside class="notes">
+Show test3.webc, cat3.webc
+				</aside>
+				</section>
+
+				<section>
+				<h2>WebC - Conditionals</h2>
+				<ul>
+				<li class="fragment"><code>webc:if="some value"</code></li>
+				<li class="fragment"><code>webc:if="some JS, even async"</code></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif">
+				<aside class="notes">
+Show test4.webc, cat4.webc
+				</aside>
+				</section>
+
+				<section>
+				<h2>WebC - Slots</h2>
+				<ul>
+				<li class="fragment">Just like "real" components</li>
+				<li class="fragment"><code>&lt;slot&gt;Default&lt;/slot&gt;</code></li>
+				<li class="fragment">&lt;cat&gt; Stuff... &lt;/cat&gt;</li>
+				<li class="fragment"><code>&lt;slot name="something"&gt;Default&lt;/slot&gt;</code></li>
+				<li class="fragment">&lt;cat&gt; &lt;p slot="something"&gt;Stuff...&lt;/p&gt; &lt;/cat&gt;</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif">
+				<aside class="notes">
+Demo3
+				</aside>
+				</section>
+
+
+
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
 					<h1>Questions</h1>
 					<p>reach me at @raymondcamden</p>
 					<p>slides: <a href="https://github.com/cfjedimaster/async-preso" target="_new">github.com/cfjedimaster/async-preso</a></p>
 				</section>
+
 
 			</div>
 		</div>

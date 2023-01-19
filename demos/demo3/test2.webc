@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<p>Cat with default slot for caption</p>
+<cat2>
+	<p>
+	This is a picture of my cat.
+	</p>
+
+	<h2 slot="header">My Cat!</h2>
+</cat2>
+
+</body>
+</html>

@@ -7,6 +7,12 @@ WebC -
 	How to install into 11ty
 	how to start using:
 		cat tag, html only
+		attributes 
+		conditionals
+		slots
+
+
+
 		cat tag with javascript, non-rolled vs rolled
 		
 

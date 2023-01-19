@@ -1,0 +1,3 @@
+<h2>Meow</h2>
+
+<img src="https://placekitten.com/400/400" alt="Picture of a cat" :width="width" :height="height">

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<h1>Hello World</h1>
+
+<p>Cat, no attributes:</p>
+<cat></cat>
+
+<p>Cat, width=200, height=400:</p>
+<cat width="200" height="400"></cat>
+
+</body>
+</html>

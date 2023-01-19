@@ -1,0 +1,3 @@
+
+<img src="https://placekitten.com/400/400" :width="width" :height="height" >
+<p @text="caption" webc:if="caption"></p>
