@@ -1,0 +1,14 @@
+
+<img src="https://placekitten.com/400/400" alt="" :width="width" :height="height">
+
+<slot>No caption provided.</slot>
+
+<script>
+console.log('hello world');
+</script>
+
+<style>
+img {
+	max-width: 100px;
+}
+</style>

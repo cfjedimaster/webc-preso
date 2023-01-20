@@ -1,0 +1,26 @@
+---
+layout: main.liquid
+---
+
+{% comment %}
+FYI, renderTemplate is built in, but you have to ask for it in .eleventy.js!!
+{% endcomment %}
+
+<p>Cat with default slot for caption</p>
+{% renderTemplate "webc" %}
+<cat>
+	<p>
+	This is a picture of my cat.
+	</p>
+</cat>
+{% endrenderTemplate %}
+
+<p>Another cat with default slot for caption</p>
+{% renderTemplate "webc" %}
+<cat>
+	<p>
+	This is another picture of my cat.
+	</p>
+</cat>
+{% endrenderTemplate %}
+

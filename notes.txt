@@ -12,8 +12,12 @@ WebC -
 		slots
 
 
+Notes as of 1/20:
+id say wrap up with a list of things not covered, 
+maybe the pdf-embed demo?
 
-		cat tag with javascript, non-rolled vs rolled
-		
+
 
 		
+img demo that uses Cloudinary
+maybe a data-table?
