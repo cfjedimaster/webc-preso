@@ -1,0 +1,14 @@
+<template webc:type="11ty" 11ty:type="liquid,md">
+{% if width == blank %}
+	{% assign width = "500" %}
+{% endif %}
+
+{% if height == blank %}
+	{% assign height = "500" %}
+{% endif %}
+
+<img src="https://placekitten.com/{{ width }}/{{ height }}" width="{{ width }}" height="{{ height }}">
+
+</template>
+
+<slot>No caption provided.</slot>

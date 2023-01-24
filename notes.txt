@@ -16,6 +16,7 @@ Notes as of 1/20:
 id say wrap up with a list of things not covered, 
 maybe the pdf-embed demo?
 
+ive added a not covered slide, need to do a demo showing liquid
 
 
 		

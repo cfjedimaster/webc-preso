@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style @raw="getCss(page.url)" webc:keep></style>
+	<script @raw="getJs(page.url)" webc:keep></script>
+</head>
+<body>
+
+<p>Cat with no w/h</p>
+<cat>
+	<p>
+	This is a picture of my cat.
+	</p>
+</cat>
+
+<!-- 
+Hey ray, when you show this, show them the issue when you add a line break and
+the slot didn't work. Also ray, you rock!
+-->
+<p>Cat with  w/h</p>
+<cat width="900" height="300"></cat>
+
+</body>
+</html>

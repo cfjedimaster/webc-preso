@@ -381,7 +381,7 @@ show test2.webc, show test3.liquid
 				<ul>
 				<li class="fragment">Same applies, 11ty gobbles up, you need to load</li>
 				<li class="fragment">And you can disable it: <code>webc:keep</code></li>
-				<li class="fragment">You can scope CSS too</li>
+				<li class="fragment">You can scope CSS too: <code>webc:scoped</code></li>
 				</ul>
 				</section>
 
@@ -400,6 +400,24 @@ show test2.webc, show test3.liquid
 				<li class="fragment"><code>getCss(page.url, 'name of bucket')</code></li>
 				<li class="fragment"><code>getJs(page.url, 'name of bucket')</code></li>
 				</ul>
+				</section>
+
+				<section>
+				<h2>But wait... there's more</h2>
+				<ul>
+				<li class="fragment">You can specify an import with <code>webc:import</code> to either a local file or npm package</li>
+				<li class="fragment">You can map an HTML tag to a component with <code>webc:is="component name"</code></li>
+				<li class="fragment">You can use other languages inside webc with <code>webc:type</code> and <code>11ty:type</code></li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Demo Time!</h2>
+				<img src="img/cattyping.gif" style="width:300px">
+				<p>Ray, click this after showing the main demo: <a href="ch.com/edit/#!/placeholder-demo?path=src%2F_includes%2Fcomponents%2Fplace-holder.webc%3A18%3A0" target="_new">PH demo</a></p>
+				<aside class="notes">
+				show demo6, then click the link
+				</aside>
 				</section>
 
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
