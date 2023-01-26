@@ -15,12 +15,11 @@
 	</p>
 </cat>
 
-<p>Another cat with default slot for caption</p>
-<cat>
-	<p>
-	This is another picture of my cat.
-	</p>
-</cat>
+
+<p>
+Random cat not in a component...
+</p>
+<img src="https://placekitten.com/500/500">
 
 </body>
 </html>
