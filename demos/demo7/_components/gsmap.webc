@@ -1,0 +1,21 @@
+<template webc:type="11ty" 11ty:type="liquid,md">
+{% if width == blank %}
+	{% assign width = "500" %}
+{% endif %}
+
+{% if height == blank %}
+	{% assign height = "500" %}
+{% endif %}
+
+{% if location == blank %}
+	{% assign location = "31.51073,-96.4247" %}
+{% endif %}
+
+{% if zoom == blank %}
+	{% assign zoom = "14" %}
+{% endif %}
+
+<img src="https://maps.googleapis.com/maps/api/staticmap?center={{ location }}&zoom={{ zoom }}&size={{ width }}x{{ height }}&key=AIzaSyCA0y7kh6V8poL-faDyVf3TpnLDNf9XtQY">
+
+</template>
+

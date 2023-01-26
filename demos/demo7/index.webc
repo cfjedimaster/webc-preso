@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style @raw="getCss(page.url)" webc:keep></style>
+	<script @raw="getJs(page.url)" webc:keep></script>
+</head>
+<body>
+
+<h2>Lafayette</h2>
+
+<gsmap location="30.22,-92.02" zoom=12></gsmap>
+
+<h2>Lake Charles</h2>
+
+<gsmap location="30.22359,-93.21788" zoom=13></gsmap>
+
+</body>
+</html>
